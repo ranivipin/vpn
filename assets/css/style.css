@@ -28,26 +28,36 @@
 
 .same {
     color: #0B132A;
-    padding-left: 150px;
+  
+
 }
 
 .btn1 {
     border: 2px solid #F53855;
     border-radius: 50px;
     padding: 8px 28px;
-
+    display: inline-block;
 }
-
+.position-absolute4{
+    position: absolute;
+    right: 100px;
+}
 .bg-color5 {
     background-color: #f8f8f8;
+}
+
+.mw-427 {
+    max-width: 427px;
 }
 
 .text-red {
     color: red;
 }
-.transform_translateY{
+
+.transform_translateY {
     transform: translateY(10%);
 }
+
 .btn2 {
     border: 2px solid #F53855;
     border-radius: 10px;
@@ -64,6 +74,11 @@
     padding: 8px 60px;
     background-color: #fff;
     text-align: center;
+
+}
+
+.box:hover {
+    border-color: #F53838;
 }
 
 .circle {
@@ -101,12 +116,16 @@
     padding-top: 130px;
 }
 
-.pt-200 {
-    padding-top: 200px;
+.pt-190 {
+    padding-top: 190px;
 }
 
-.pt-140 {
-    padding-top: 140px;
+.get {
+    max-width: 370px;
+}
+
+.pt-143 {
+    padding-top: 143px;
 }
 
 .pl-10 {
@@ -144,6 +163,12 @@
 
 .color {
     color: #4F5665;
+}
+
+.ellipse {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .btn3:hover {
@@ -204,11 +229,13 @@
     border-radius: 50%;
     background-color: #fff;
 }
+
 .circle2 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-   border: 2px solid #F53838;
+    border: 2px solid #F53838;
+
 }
 
 .text3 {
@@ -220,19 +247,52 @@
 
 }
 
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #000;
+}
+
+.slick-dots li button:before {
+
+    font-family: slick;
+    font-size: 25px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: -570px !important;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: left;
+    opacity: .25;
+    color: #000;
+}
+
+.slick-dots li.slick-active button::before {
+    text-align: left;
+    color: #F53838 !important;
+}
+
 .footer-text1 {
     color: #0B132A;
 
 }
-.transform_translateY_37{
+
+.transform_translateY_37 {
     transform: translateY(37%) !important;
 }
-.card2:hover{
+
+.card2:hover {
     border-color: #F53838;
 }
-.circle2:hover{
+
+.circle2:hover {
     background-color: #F53838;
-    
+
+}
+
+.mw-555 {
+    max-width: 555px;
 }
 
 @media (max-width:1200px) {
@@ -243,7 +303,7 @@
         width: 30px;
         height: 25px;
         position: relative;
-        z-index: 1;
+        z-index: 4;
         cursor: pointer;
         flex-direction: column;
 
@@ -267,24 +327,31 @@
         left: -100%;
         width: 100%;
         height: 100%;
+        z-index: 3;
         background-color: goldenrod;
         transition: all 300ms linear;
     }
+        .position-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 6;
+            background-color: #FFF;
+        }
 
     input[type="checkbox"][id=menubar]:checked+ul.mobile-view {
         left: 0;
     }
 
-
 }
 
 @media(min-width:992px) {
+
     .line::after {
         content: "";
         position: absolute;
         width: 2px;
         height: 100%;
-        right: 100px;
+        right: 0;
         background-color: #EEEFF2;
     }
 
@@ -293,8 +360,12 @@
         position: absolute;
         width: 2px;
         height: 100%;
-        right: 100px;
+        right: 0;
         background-color: #FFF;
     }
 
+    .same {
+        padding-left: 150px;
+
+    }
 }
